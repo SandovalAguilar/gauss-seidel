@@ -1,4 +1,4 @@
-import gauss_seidel_module as gsm
+import numerical_methods as gsm
 import numpy as np
 
 raw_matrix = np.random.rand(3,3)

@@ -1,0 +1,2 @@
+from numerical_methods.matrix import matrixSystem
+from numerical_methods.gauss_seidel_method import gaussSeidel

@@ -31,5 +31,5 @@ class matrixSystem:
             return np.absolute(self.diagonal[i]) > (self.sum_elements() - self.diagonal[i])
                 
     def find_roots_gauss_seidel(self):
-        from gauss_seidel_module.gauss_seidel_method import gaussSeidel
+        from numerical_methods.gauss_seidel_method import gaussSeidel
 
