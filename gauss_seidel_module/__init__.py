@@ -1,1 +1,2 @@
 from gauss_seidel_module.matrix import matrixSystem
+from gauss_seidel_module.gauss_seidel_method import gaussSeidel

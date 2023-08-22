@@ -7,8 +7,7 @@ class matrixSystem:
         self.length = self.matrix.shape[0]
         self.tolerance = tolerance
         self.diagonal = self.find_diagonal()
-        # This is the actual function that applies the Gauss-Seidel method 
-        self.roots = self.find_roots()
+        self.roots_gauss_seidel = self.find_roots_gauss_seidel()
         self.is_dominant = self.verify_diagonal()
 
     def find_diagonal(self):
@@ -19,9 +18,18 @@ class matrixSystem:
 
         return self.diagonal
 
-    def verify_diagonal():
-        pass
+    def sum_elements(self):
+        sum = 0
 
-    def find_roots(self):
-        pass
+        for i in range(self.length):
+            sum += self.diagonal[i]
+
+        return sum
+
+    def verify_diagonal(self):
+        for i in range(self.length):
+            return np.absolute(self.diagonal[i]) > (self.sum_elements() - self.diagonal[i])
+                
+    def find_roots_gauss_seidel(self):
+        from gauss_seidel_module.gauss_seidel_method import gaussSeidel
 
